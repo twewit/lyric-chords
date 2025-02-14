@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Lyrics with Chords</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        #lyrics { white-space: pre-wrap; text-align: left; display: inline-block; }
+    </style>
+</head>
+<body>
+    <h1>Search for Song Lyrics with Chords</h1>
+    <input type="text" id="search" placeholder="Enter song title">
+    <button onclick="searchSong()">Search</button>
+    <div id="results"></div>
+
+    <script>
+        function searchSong() {
+            let query = document.getElementById('search').value;
+            alert('You searched for: ' + query);
+        }
+    </script>
+</body>
+</html>
+
